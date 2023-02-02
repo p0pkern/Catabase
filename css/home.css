@@ -1,0 +1,83 @@
+/* Main Globals for Home page */
+:root {
+    --main-color-blue: rgb(134, 225, 238);
+    --main-color-red: rgb(243, 124, 124);
+    --main-color-offwhite: rgb(233, 233, 233);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: serif;
+}
+
+html {
+    background-color: var(--main-color-offwhite);
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top heading and navigation bar */
+
+.heading, .nav {
+    display: flex;
+    justify-content:space-between;
+    padding: 0 0 0 10px;
+    background-color: var(--main-color-red);
+}
+
+.nav li {
+    padding: 20px 20px;
+}
+
+.nav a {
+    padding: 20px 20px;
+    font-size: 1.1rem;
+    border-left: 2px solid var(--main-color-offwhite);
+}
+
+/* Search Box */
+.search {
+    margin: 10px auto;
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+}
+
+.search__fields {
+    padding: 20px;
+    font-size: 1.2rem;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--main-color-offwhite);
+}
+
+.search__input {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Footer styling */
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.2rem;
+    background-color: var(--main-color-red);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+}
