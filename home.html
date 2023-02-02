@@ -19,7 +19,8 @@
       </nav>
     </header>
 
-    <main>
+    <main class="content">
+    <section>
       <form id="searchForm" class="search">
         <fieldset class="search__fields">
           <legend><h3>Search For a Cat</h3></legend>
@@ -27,15 +28,29 @@
           <input class="search__input" type="search" name="search" placeholder="Ex: Tabby"/>
         </fieldset>
       </form>
+    </section>
 
-      <h3>Results</h3>
-      <ul>
-        <li>A Cat</li>
+      <hr/><br/>
+
+    <section>
+        <h3 class="deck__title">Results</h3>
+      <ul class="deck__container">
+
+        <li class="card card--hover">
+            <div class="card__inner">
+                <div class="card__front">
+                    <h4>Orange Tabby</h4>
+                    <img class="" src="./imgs/cat.jpeg"/>
+                </div>
+                <div class="card__back">
+                    <h4>Facts</h4>
+                    <p>Orange cats all share one brain cell.</p>
+                <div>
+            </div>
+        </li>
+        
       </ul>
     </main>
-
-    <footer class="footer">
-      <h3>Created by Chris Peterman</h3>
-    </footer>
+    </section>
   </body>
 </html>

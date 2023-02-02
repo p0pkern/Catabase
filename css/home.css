@@ -18,6 +18,12 @@ html {
     font-size: 100%;
 }
 
+body {
+    min-height: 100%;
+    display: table;
+    width: 100%;
+}
+
 h1 {
     font-size: 2rem;
     padding-top: 10px;
@@ -28,8 +34,18 @@ a {
     color: inherit;
 }
 
-/* Top heading and navigation bar */
+hr {
+    margin-top: 40px
+}
 
+/* Establish content area height for footer position */
+.content {
+    display: table-row;
+    height: 100%;
+    padding: 50px;
+}
+
+/* Top heading and navigation bar */
 .heading, .nav {
     display: flex;
     justify-content:space-between;
@@ -56,7 +72,7 @@ a {
 }
 
 .search__fields {
-    padding: 20px;
+    padding: 0 20px;
     font-size: 1.2rem;
     border-style: solid;
     border-radius: 10px;
@@ -69,15 +85,51 @@ a {
     padding: 5px;
 }
 
-/* Footer styling */
-.footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 1.2rem;
-    background-color: var(--main-color-red);
-    width: 100%;
-    height: 50px;
+/* Populated Cat cards on main page */
+.deck__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.deck__title {
+    font-size: 2rem;
     text-align: center;
-    padding: 20px;
+    border-bottom: 2px solid black;
+    width: 200px;
+    margin: 0 auto 20px auto;
+}
+
+/* Individual cat cards */
+.card {
+    width: 300px;
+    height: 300px;
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card--hover:hover .card__inner {
+    transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.card__front {
+    background-color: var(--main-color-red);
+}
+.card__back {
+    background-color: var(--main-color-red);
+    transform: rotateY(180deg);
 }
