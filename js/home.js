@@ -72,8 +72,9 @@ const createCardBack = (data) => {
     cardBack.className = "card__back";
 
     // Card Title
-    const cardHeading = document.createElement('p');
-    cardHeading.innerText = `${data["id"]} ${data["breed"]}`;
+    const cardHeading = document.createElement('h3');
+    cardHeading.className = "card__back__title";
+    cardHeading.innerText = `Breed: ${data["breed"]}`;
 
     cardBack.appendChild(cardHeading);
 

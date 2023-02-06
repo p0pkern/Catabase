@@ -134,6 +134,7 @@ hr {
 .card__front {
     background-color: var(--main-color-red);
 }
+
 .card__back {
     background-color: var(--main-color-red);
     transform: rotateY(180deg);
@@ -150,4 +151,24 @@ hr {
     margin: 0 auto;
     padding: 0;
     font-size: 1.5rem;
+}
+
+.card__back__title {
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: bold;
+}
+
+.card__back dl {
+    padding-top: 4%;
+    text-align: left;
+}
+
+.card__back dt {
+    font-style: italic;
+}
+
+.card__back dd {
+    padding-bottom: 2%;
+    text-align: center;
 }
