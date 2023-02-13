@@ -133,15 +133,18 @@ hr {
 
 .card__front {
     background-color: var(--main-color-red);
+    max-height: 100%;
 }
 
 .card__back {
     background-color: var(--main-color-red);
     transform: rotateY(180deg);
+    overflow-y: scroll;
 }
 
 .card__front__img {
-    width: 230px;
+    max-width: 250px;
+    max-height: 70%;
     border: 1px solid black;
     border-radius: 10px;
     margin: 1%;
@@ -151,6 +154,7 @@ hr {
     margin: 0 auto;
     padding: 0;
     font-size: 1.5rem;
+    max-height: 20%;
 }
 
 .card__back__title {
